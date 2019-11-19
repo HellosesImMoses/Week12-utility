@@ -7,3 +7,10 @@
 def PrintOutput(string):
     print('OUTPUT {}'. format(string))
 
+def LoadFile(file_name):
+    my_list = []
+    with open(file_name, 'r') as file:
+        for i in file:
+            my_list.append(i.strip('\n'))
+        return(my_list)
+
