@@ -23,3 +23,10 @@ def UpdateString(base_string, change_string, index):
     my_list[index] = change_string
     output = output.join(my_list)
     print('OUTPUT {}'. format(output))
+
+def FindWordCount(my_list, string):
+    counter = 0
+    for i in my_list:
+        if i.lower() == string.lower():
+            counter += 1
+    print('OUTPUT {}'. format(counter))
