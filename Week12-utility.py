@@ -1,4 +1,4 @@
-#*github repo url*
+#https://github.com/HellosesImMoses/Week12-utility
 #Ryan Moses
 #CSCI 102 - Section A
 #Week 12 - Part A/B
@@ -42,5 +42,12 @@ def ScoreFinder(players, scores, name):
     else:
         print('OUTPUT player not found')
 
-
-
+def Union(list1, list2):
+    output = []
+    for i in list1:
+        if i not in output:
+            output.append(i)
+    for i in list2:
+        if i not in output:
+            output.append(i)
+    return output
