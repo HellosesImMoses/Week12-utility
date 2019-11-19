@@ -14,3 +14,12 @@ def LoadFile(file_name):
             my_list.append(i.strip('\n'))
         return(my_list)
 
+def UpdateString(base_string, change_string, index):
+    my_list = []
+    output = ''
+    for word in base_string:
+        for char in word:
+            my_list.append(char)
+    my_list[index] = change_string
+    output = output.join(my_list)
+    print('OUTPUT {}'. format(output))
